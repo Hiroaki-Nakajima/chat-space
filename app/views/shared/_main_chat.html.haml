@@ -1,0 +1,43 @@
+.chat-main
+  .group-info
+    .group-info__info-item
+      %p.group-info__info-item__group-name
+        テスト
+      %p.group-info__info-item__group-member
+        member: masa
+    =link_to "#", class: "group-info__edit-btn" do
+      Edit
+  .message-list
+    .message-box
+      .message-box__message-title
+        %p.message-box__message-title__message-name
+          masa
+        %p.message-box__message-title__message-date 
+          2019/11/20(wed) 17:43:11     
+      .message-box__message-main 
+        テストテストテスト
+    .message-box
+      .message-box__message-title
+        %p.message-box__message-title__message-name
+          hiro
+        %p.message-box__message-title__message-date 
+          2019/11/20(wed) 17:43:11     
+      .message-box__message-main 
+        チェックチェックチェック
+  .message-form
+    = form_for("#", html:{class: "new-message"}) do |f|
+      .input-wrapper
+        = f.text_field :message, class: "input-wrapper__input-message", placeholder: "type a text"
+        %label.input-wrapper__img-btn
+          = icon('fas', 'image')
+          = f.file_field :file, class: "input-wrapper__img-btn__file"
+      = f.submit :submit, class: "new-message__send-btn"
+
+
+      
+
+      
+
+      
+
+    

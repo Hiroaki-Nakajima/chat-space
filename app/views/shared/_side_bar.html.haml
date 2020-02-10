@@ -2,11 +2,11 @@
   .user-name
     .top-item
       %p.top-item__name
-        masa
+        = current_user.name
       .top-item__icons
         = link_to "#" do
           %label.fa.fa-edit
-        = link_to "#" do
+        = link_to edit_user_path(current_user) do
           %label.fa.fa-cog
   .group-list
     .group-box

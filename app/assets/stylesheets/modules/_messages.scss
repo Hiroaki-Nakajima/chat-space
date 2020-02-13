@@ -104,7 +104,8 @@
 
 .message-list {
   height: calc(100% - 190px);
-  background-color: #fafafa; 
+  background-color: #fafafa;
+  overflow: scroll; 
 }
 
 .message-box {

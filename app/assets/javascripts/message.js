@@ -95,9 +95,12 @@ $(function(){
         $('.message-list').animate({ scrollTop: $('.message-list')[0].scrollHeight});
       }
     })
+    .fail(function() {
+      alert('自動更新に失敗しました');
+    });
   }
 
-  if (document.location.href.match(/\/groups\/\d+\/message/)) {
+  if (document.location.href.match(/\/groups\/\d+\/messages/)) {
     setInterval(reloadMessages, 7000);
   }
 })

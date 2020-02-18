@@ -7,5 +7,5 @@
   .message-box__message-main 
     - if message.content.present?
       %p.message-box__message-main__content
-      = message.content
+        = message.content
     = image_tag message.image.url, class: 'message-box__message-main__image' if message.image.present?

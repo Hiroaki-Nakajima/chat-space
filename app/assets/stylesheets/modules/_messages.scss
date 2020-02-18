@@ -91,14 +91,14 @@
   &__edit-btn {
     height: 40px;
     width: 72px;
-    margin: 28px 40px;
-    padding: 0 20px;
+    margin: 28px 40px 0 0;
     display: block;
     text-align: center;
     line-height: 40px;
     font-size: 16px;
     color: #38aef0;
     text-decoration: none;
+    border: 1px solid #38aef0;
   }
 }
 
@@ -146,6 +146,8 @@
     border-style: none;
     margin: 0 40px 0 15px;
     cursor: pointer;
+    background-color: #38aef0;
+    color: white;
   }
 }
 
@@ -160,7 +162,7 @@
   }
   &__img-btn {
     position: absolute;
-    top: 18px;
+    top: 15px;
     right: 10px;
     margin-right: 10px;
     cursor: pointer;
